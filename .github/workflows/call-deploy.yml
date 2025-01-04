@@ -11,31 +11,4 @@ jobs:
     with:
       server_ip: 3.109.202.45
       ssh_user: ubuntu
-      ssh_key: |
-        -----BEGIN RSA PRIVATE KEY-----
-        MIIEowIBAAKCAQEAyewd594jv7QuZaV0C71a4LvV2hZXDKw4GfWBZbIRk8YDZ8nD
-        pn5v9kCsamDXN1yCGwE5KqXwdgQmuYozVx/w62VXa0qGuvA9Br4vq2LkTj9VRAr6
-        2sDDNrDhQPoLXu27HynQzIkFLGXpu1cd7jKnQ1KyVwHbGBrqRO59ZeN0VTFk49q4
-        307BPvd5hRUGGX8cTpsJQJ8u/5PGP8FvcQ1WP8C7FPk9MQIM88gJfMt6GSTiCVcV
-        Aj4IKpjWLKnTwPdB0esY8MkFSpQQpLXcT7MYguqaEJPIrZ24qNpp23Wh904/twca
-        myiXEVTnDnp1NorCAGKJawAC6Ut/v4sSbJLiEQIDAQABAoIBACgrry9nxBjpUamr
-        JtEHFMNM2xiOBTdiM68GZn3C1The1mKZgzDmSoPlDegD6Az9fGy+646OgK4Z2VJk
-        Kh6VHirWeHPB2dfq31kuEPG5tM3UT7Q/svQ+ERgaTFXO6OAzz1w9x2pJgBv7EmrQ
-        xAWVUi1UkGI63kmHYT/halUQ0R35YSadYVPvOG1EoabDhNadaQH7+K8l1ocHouXz
-        LEY1uoh0Zkf9kKcKw7bYdfnaOoCIqrrPPCXThJrsenvVcP7iaOT6ABXWAOOblM15
-        gMVvcXzrvPO7wdTDRTilpKUk7+h/HVPsRxNoVztMKZupo6tqKmka2dq0Z5RC7HBR
-        8f9bgAECgYEA6gVdBILEfOQ95v4ArN7O9gZ92LFfpfqbwjwrQaAwkTvhrh5egEl/
-        3/ESgeNO8KQleb7aR0iqPGA+gornZ+ssEQ1b++gGpSaNhDmBQSHSwtQ+hdMJTfai
-        qPo9vKkbfUPTHR6qLOHpBZ+VsOsOg8yzWwnj9s/cXPD/n6U1ahHmvAECgYEA3OL/
-        I5ZLldRmu/gdRUcNnn+fURefPf87cYGkMaMc7AGnZA5dnxYsKPkzzilJ3zUVLWWB
-        f0hATMh8YqB3C9Bi2tuDqkBxMMn4e1rc/YgdOVyS/Pa5OBBMRYXLL5iogVmIc3h7
-        0HlKCmcJxGCKT8wjFB4r5A9zjo1QxTfHiK1YZhECgYBmxKwwiuyWm/TDN9A8Gixw
-        xjEFs/74+LDl/15Pl3U8kjttJ1EArUZGpasm9xd3fd4nNLTOkQ6RLQLGeRFeBVx4
-        sJEwcphYdjG3WzlzzNKtVF+QjTiM0D5mTl5GN00nGV3gb9LzmtGl8oreApuBLael
-        1xYREP8IoZzgEsD+L5ZQAQKBgHpKwu80+swNOIPBLpN4bzXdepsu9N8iPArvt7Qz
-        loOjtsVSnsrBP9m/fssZWOjXPs5PcI7DtbXNGfCQ3tgPm2uINTFBVGmqqIPDHq7P
-        eT6U3lxnTMyZWWD0XjYP0tsqcr1ba1FUlYWE3od225yqbJFq0uoFE/lMi/dklng5
-        YMPBAoGBAN6PvhT3TmqbGsD/0qisLVBfOq66/vocJLolakXUpftlGj8lnHGLt/nA
-        oIkX8C0T6Rqe1ecYUJ5AX61YwlJsCv2iQP+DF65e9X3bhTmd1fGuDXrYuQQxWZQC
-        hNfYgApw/8DE3KWQ1Bc3Cy4s08MLHEaXxbOHPBXjcxFu20gXnwtp
-        -----END RSA PRIVATE KEY-----
+      ssh_key: ${{ secrets.SSH_KEY }}
