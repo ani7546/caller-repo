@@ -1,0 +1,11 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  call-reusable-workflow:
+    uses: ani7546/reusable-workflow-repo/.github/workflows/print.yml@main
+   
