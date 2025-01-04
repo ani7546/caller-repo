@@ -1,0 +1,14 @@
+name: Call Deploy Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: reusable-workflow-repo/reusable-workflow-repo/.github/workflows/deploy.yml@main
+    with:
+      server_ip: ${{ vars.SERVER_IP }}
+      ssh_user: ${{ vars.SSH_USER }}
+      ssh_key: ${{ secrets.SSH_KEY }}
