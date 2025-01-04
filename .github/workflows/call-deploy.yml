@@ -11,4 +11,5 @@ jobs:
     with:
       server_ip: 3.109.202.45
       ssh_user: ubuntu
-      ssh_key: ${{ secrets.SSH_KEY }}
+    secrets:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  
