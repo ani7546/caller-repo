@@ -9,6 +9,6 @@ jobs:
   call-reusable-workflow:
     uses: ani7546/reusable-workflow-repo/.github/workflows/deploy.yml@main
     with:
-      server_ip: ${{ vars.SERVER_IP }}
-      ssh_user: ${{ vars.SSH_USER }}
+      server_ip: ${{ secrets.SERVER_IP }}
+      ssh_user: ${{ secrets.SSH_USER }}
       ssh_key: ${{ secrets.SSH_KEY }}
