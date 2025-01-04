@@ -7,9 +7,18 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ani7546/reusable-workflow-repo/.github/workflows/deploy.yml@main
-    with:
-      server_ip: 3.109.202.45
-      ssh_user: ubuntu
-    secrets:
-      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up SSH key as environment variable
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: echo "SSH key is set as an environment variable."
+
+      - name: Call the reusable deploy workflow
+        uses: ani7546/reusable-workflow-repo/.github/workflows/deploy.yml@main
+        with:
+          server_ip: 3.109.202.45
+          ssh_user: ubuntu
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # Pass the secret as an environment variable
