@@ -11,5 +11,6 @@ jobs:
     with:
       server_ip: 3.109.202.45
       ssh_user: ubuntu
+      source: .
     secrets:
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # Pass the SSH key as a secret
