@@ -9,7 +9,7 @@ jobs:
   call-reusable-workflow:
     uses: ani7546/reusable-workflow-repo/.github/workflows/deploy.yml@main
     with:
-      source: "."  # Deploy all files from the repository root
+      # source: "."  # Deploy all files from the repository root
       target: "~/manual-directory"
     secrets:
       AWS_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
