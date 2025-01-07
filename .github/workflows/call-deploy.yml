@@ -12,6 +12,6 @@ jobs:
       source: "."  # Deploy all files from the repository root
       target: "~/manual-directory"
     secrets:
-      SSH_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
-      SERVER_IP: ${{ secrets.AWS_IP }}
-      SSH_USER: ${{ secrets.AWS_USER }}
+      AWS_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
+      AWS_IP: ${{ secrets.AWS_IP }}
+      AWS_USER: ${{ secrets.AWS_USER }}
